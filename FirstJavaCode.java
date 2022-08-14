@@ -1,9 +1,9 @@
 public class FirstJavaCode{
-    public static int sumOfTwoNumbers(int x, int y) {
-        return x+y;
+    public static void sumOfTwoNumbers(int x, int y) {
+        System.out.println(x+y);
     }
 
     public static void main(String[] args) {
-        System.out.println(sumOfTwoNumbers(12,10));
+        sumOfTwoNumbers(1,2);
     }
 }
