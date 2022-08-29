@@ -1,4 +1,4 @@
-package Dynamic Programming 2;
+package DynamicProgramming2;
 
 public class LCSIterative {
     public static int lcs(String s1, String s2) {

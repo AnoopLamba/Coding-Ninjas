@@ -1,4 +1,4 @@
-package Dynamic Programming 2;
+package DynamicProgramming2;
 
 public class LCSMemoization {
     public static int lcs(String s1, String s2) {
@@ -14,7 +14,7 @@ public class LCSMemoization {
 
     public static int helper(String s1, String s2, int i, int j, int[][] arr) {
         //base case
-        if(s1.length() == 0 || s2.length == 0) {
+        if(s1.length() == 0 || s2.length() == 0) {
             return 0;
         }
 
