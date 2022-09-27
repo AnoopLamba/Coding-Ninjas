@@ -3,8 +3,6 @@ package HashMaps;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.xml.sax.HandlerBase;
-
 public class RemoveDuplicates {
 
     public static ArrayList<Integer> removeDuplicates(int[] input) {
@@ -13,7 +11,7 @@ public class RemoveDuplicates {
 
         ArrayList<Integer> output = new ArrayList<>();
         HashMap<Integer, Boolean> map = new HashMap<>();
-        
+
         for(int i = 0; i < input.length; i++) {
             if(map.containsKey(input[i])) {
                 continue;
