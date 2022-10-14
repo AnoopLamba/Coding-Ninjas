@@ -1,7 +1,5 @@
 package PriorityQueue2;
 
-import javax.swing.JSpinner.ListEditor;
-
 public class InplaceHeapSort {
 
     public static void heapSort(int[] arr) {
