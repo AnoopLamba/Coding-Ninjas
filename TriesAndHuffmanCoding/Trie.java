@@ -1,7 +1,5 @@
 package TriesAndHuffmanCoding;
 
-import java.util.ArrayList;
-
 class TrieNode {
     char data;
     boolean isTerminal;
