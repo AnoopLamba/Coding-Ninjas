@@ -54,9 +54,7 @@ class Trie{
                     ArrayList<String> list = new ArrayList<>();
                     ArrayList<String> outputList = allWords(root, list, "");
                     for(String s : outputList) {
-                        if(s != "") {
-                            System.out.println(key + s);
-                        }
+                        System.out.println(key + s);
                     }
                 }
             }
