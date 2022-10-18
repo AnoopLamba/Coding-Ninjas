@@ -18,7 +18,7 @@ class TrieNode {
     }
 }
 
-public class Trie {
+class Trie {
     private TrieNode root;
     private int numWords;
 
