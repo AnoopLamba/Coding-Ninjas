@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Mode</title>
+    <style>
+        #outer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #toggler-outer{
+            background-color: white;
+            height: 2rem;
+            width: 8rem;
+            margin: 4vh;
+            padding: 0.1rem;
+            border: 2px solid black;
+            border-radius: 2rem;
+            display: flex;
+            align-items: stretch;
+            justify-content: start;
+        }
+        #toggler-inner{
+            width: 2rem;
+            background-color: black;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="toggler-outer">
+            <div id="toggler-inner"></div>
+        </div>
+        <h1 id="heading">Click on the Toggle Button</h1>
+    </div>
+
+    <script src="ToggleMode.js"></script>
+</body>
+</html>
