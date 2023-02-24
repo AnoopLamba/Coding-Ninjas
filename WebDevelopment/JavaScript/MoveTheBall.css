@@ -1,0 +1,12 @@
+body{
+    margin: 0px;
+}
+.ball{
+    height: 5rem;
+    width: 5rem;
+    background-color: salmon;
+    border-radius: 50%;
+    position: relative;
+    top: 40vh;
+    left: 45vw;
+}
