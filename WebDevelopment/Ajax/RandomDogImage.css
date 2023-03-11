@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* container 1 */
+#container-1{
+    height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* container 2 */
+#container-2{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#dog-image{
+    opacity: 0;
+    margin: 2rem;
+    height: 50vh;
+    width: 50vh;
+    object-fit: contain;
+    border: 0;
+}
