@@ -1,0 +1,356 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div {
+    margin: 5rem;
+}
+
+.triangle-up {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0px 50px 86px 50px;
+    border-color: orange transparent;
+}
+
+.triangle-down {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 86px 50px 0px 50px;
+    border-color: orange transparent;
+}
+
+.triangle-right {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 50px 86px 50px 0px;
+    border-color: transparent orange;
+}
+
+.triangle-left {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 50px 0px 50px 86px;
+    border-color: transparent orange;
+}
+
+.triangle-top-left {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 50px 50px;
+    border-color: orange transparent transparent orange;
+}
+
+.triangle-top-right {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 50px 50px;
+    border-color: orange orange transparent transparent;
+}
+
+.bookmark {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 50px 50px;
+    border-color: orange orange transparent orange;
+}
+
+.trapezoid {
+    height: 0;
+    width: 100px;
+    border-style: solid;
+    border-width: 0px 50px 100px 50px;
+    border-color: transparent transparent orange transparent;
+}
+
+.parallelogram {
+    height: 100px;
+    width: 150px;
+    background-color: orange;
+    transform: skew(20deg);
+}
+
+/* 5 point star */
+.star_5 {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid orange;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+.star_5:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -46px;
+    left: -65px;
+    border-bottom: 80px solid orange;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 0;
+    transform: rotate(-35deg);
+}
+
+.star_5:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid orange;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+}
+
+/* 6 point star */
+.star_6 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid orange;
+    position: relative;
+}
+
+.star_6:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid orange;
+}
+
+/* 8 point star */
+.star_8,
+.star_8:before {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    transform: rotate(45deg);
+}
+
+.star_8:before {
+    content: '';
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+/* 12 point star */
+.star_12 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+}
+
+.star_12:before,
+.star_12:after {
+    content: '';
+    height: 150px;
+    width: 150px;
+    position: absolute;
+}
+
+.star_12:before {
+    background-color: rgb(91, 91, 255);
+    transform: rotate(30deg);
+}
+
+.star_12:after {
+    background-color: red;
+    transform: rotate(60deg);
+}
+
+/* Pentagon */
+.pentagon {
+    position: relative;
+    height: 0px;
+    width: 100px;
+    border-style: solid;
+    border-width: 100px 50px 0px 50px;
+    border-color: orange transparent transparent transparent;
+}
+
+.pentagon::before {
+    position: absolute;
+    top: -200px;
+    left: -50px;
+    content: '';
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0px 100px 100px 100px;
+    border-color: transparent transparent orange transparent;
+}
+
+/* Hexagon */
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background: orange;
+    position: relative;
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid orange;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid orange;
+}
+
+/* Diamond */
+.diamond {
+    border-style: solid;
+    border-color: transparent transparent orange transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: relative;
+}
+
+.diamond:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: orange transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+/* Plus shape */
+.plus {
+    position: relative;
+    height: 120px;
+    width: 40px;
+    background-color: orange;
+}
+
+.plus:before {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    content: '';
+    height: 40px;
+    width: 120px;
+    background-color: orange;
+}
+
+/* Clover */
+.clover {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+}
+
+.t_left,
+.t_right,
+.b_left,
+.b_right {
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.t_left {
+    top: -25px;
+    left: -25px;
+}
+
+.t_right {
+    top: -25px;
+    left: 25px;
+}
+
+.b_left {
+    top: 25px;
+    left: -25px;
+}
+
+.b_right {
+    top: 25px;
+    left: 25px;
+}
+
+/* Heart */
+.heart {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 50%;
+
+}
+
+.heart::before {
+    top: -50px;
+}
+
+.heart::after {
+    top: 0px;
+    left: 50px;
+}
+
+/* Crescent Moon */
+.crescent {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 12px 1px 0px 3px orange;
+}
