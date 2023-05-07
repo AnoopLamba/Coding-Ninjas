@@ -23,6 +23,8 @@ public class ReturnArraySum {
             }
             System.out.println(returnSum(arr));
         }
+
+        s.close();
     }
 
 }
