@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic user card</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        .card {
+          width: 250px;
+          padding: 10px 20px;
+          border-radius: 20px;
+          margin: 50px auto;
+          background-color: rgb(236, 236, 236);
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+  
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 60%;
+          margin: 0 auto;
+        }
+      </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="DynamicUserCard.js" type="text/babel"></script>
+</body>
+</html>
